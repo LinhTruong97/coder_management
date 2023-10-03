@@ -1,0 +1,272 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "codermanagement",
+    "dateExported": "2023-10-03T14:17:25.126Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "8a0ec7b8-44eb-46b2-a05f-4e4deef5a793",
+            "name": "user",
+            "containerId": "",
+            "created": "2023-10-03T03:21:48.870Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "ca230dae-0427-4a2e-93fb-c3a9678f24b2",
+            "name": "task",
+            "containerId": "",
+            "created": "2023-10-03T04:44:29.046Z",
+            "sortNum": 20000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "401744ff-3bc6-445b-acaa-7c7f75bb2571",
+            "colId": "0b143d30-0f69-41c1-8a78-7c9428c08db5",
+            "containerId": "8a0ec7b8-44eb-46b2-a05f-4e4deef5a793",
+            "name": "Create a user",
+            "url": "{{host}}/user",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2023-10-03T03:22:57.100Z",
+            "modified": "2023-10-03T13:23:50.510Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"assss\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "96f1d66f-cf27-4359-9742-fca0ffe17c17",
+            "colId": "0b143d30-0f69-41c1-8a78-7c9428c08db5",
+            "containerId": "8a0ec7b8-44eb-46b2-a05f-4e4deef5a793",
+            "name": "Get a list of users",
+            "url": "{{host}}/user",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2023-10-03T03:59:52.933Z",
+            "modified": "2023-10-03T14:06:23.944Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "page",
+                    "value": "2",
+                    "isDisabled": true,
+                    "isPath": false
+                },
+                {
+                    "name": "limit",
+                    "value": "10",
+                    "isDisabled": true,
+                    "isPath": false
+                },
+                {
+                    "name": "name",
+                    "value": "Hoai Linh",
+                    "isDisabled": true,
+                    "isPath": false
+                },
+                {
+                    "name": "role",
+                    "value": "employee",
+                    "isDisabled": true,
+                    "isPath": false
+                },
+                {
+                    "name": "notAllowedQuery",
+                    "value": "abc",
+                    "isDisabled": true,
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "39caf5e2-2539-4109-aff7-1ad9ae3c9778",
+            "colId": "0b143d30-0f69-41c1-8a78-7c9428c08db5",
+            "containerId": "8a0ec7b8-44eb-46b2-a05f-4e4deef5a793",
+            "name": "Get user by id",
+            "url": "{{host}}/user/651b914d874f4233e28e83b0",
+            "method": "GET",
+            "sortNum": 50000,
+            "created": "2023-10-03T04:25:02.231Z",
+            "modified": "2023-10-03T14:04:09.910Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "f36c5eb6-42ac-4834-882c-4d9131bddff8",
+            "colId": "0b143d30-0f69-41c1-8a78-7c9428c08db5",
+            "containerId": "8a0ec7b8-44eb-46b2-a05f-4e4deef5a793",
+            "name": "Get all tasks of a user",
+            "url": "{{host}}/user/651b8fa157be89b79acd9f30/tasks",
+            "method": "GET",
+            "sortNum": 60000,
+            "created": "2023-10-03T04:31:44.945Z",
+            "modified": "2023-10-03T14:05:32.666Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "a0875c33-0f66-4ee7-b687-550a76ae7c53",
+            "colId": "0b143d30-0f69-41c1-8a78-7c9428c08db5",
+            "containerId": "8a0ec7b8-44eb-46b2-a05f-4e4deef5a793",
+            "name": "Soft delete user",
+            "url": "{{host}}/user/651b930b044c8e8d6e28c406",
+            "method": "DELETE",
+            "sortNum": 60000,
+            "created": "2023-10-03T04:37:40.610Z",
+            "modified": "2023-10-03T14:06:03.017Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "d7484f30-1d02-4886-8d3e-9408cda00f0a",
+            "colId": "0b143d30-0f69-41c1-8a78-7c9428c08db5",
+            "containerId": "ca230dae-0427-4a2e-93fb-c3a9678f24b2",
+            "name": "Create a task",
+            "url": "{{host}}/task",
+            "method": "POST",
+            "sortNum": 70000,
+            "created": "2023-10-03T04:46:33.362Z",
+            "modified": "2023-10-03T04:56:05.692Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Task 9\",\n  \"description\": \"Description 9\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "1155a0a8-49be-4f55-be3f-bcd816cb99e6",
+            "colId": "0b143d30-0f69-41c1-8a78-7c9428c08db5",
+            "containerId": "ca230dae-0427-4a2e-93fb-c3a9678f24b2",
+            "name": "Get a list of tasks",
+            "url": "{{host}}/task",
+            "method": "GET",
+            "sortNum": 80000,
+            "created": "2023-10-03T05:00:00.158Z",
+            "modified": "2023-10-03T05:14:57.311Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "page",
+                    "value": "2",
+                    "isDisabled": true,
+                    "isPath": false
+                },
+                {
+                    "name": "limit",
+                    "value": "10",
+                    "isDisabled": true,
+                    "isPath": false
+                },
+                {
+                    "name": "name",
+                    "value": "Task 1",
+                    "isDisabled": true,
+                    "isPath": false
+                },
+                {
+                    "name": "status",
+                    "value": "pending",
+                    "isDisabled": true,
+                    "isPath": false
+                },
+                {
+                    "name": "notAllowedQuery",
+                    "value": "",
+                    "isDisabled": true,
+                    "isPath": false
+                },
+                {
+                    "name": "sortBy",
+                    "value": "updatedAt",
+                    "isDisabled": true,
+                    "isPath": false
+                },
+                {
+                    "name": "sortOrder",
+                    "value": "-1",
+                    "isDisabled": true,
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "4a33b101-575f-4cdd-8ae4-05da4c90e06b",
+            "colId": "0b143d30-0f69-41c1-8a78-7c9428c08db5",
+            "containerId": "ca230dae-0427-4a2e-93fb-c3a9678f24b2",
+            "name": "Get task by id",
+            "url": "{{host}}/task/651b9e6867636c838b4be3be",
+            "method": "GET",
+            "sortNum": 90000,
+            "created": "2023-10-03T05:18:38.089Z",
+            "modified": "2023-10-03T14:07:38.376Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "97ca9e1b-6af6-41a7-8156-18aebde7c3c4",
+            "colId": "0b143d30-0f69-41c1-8a78-7c9428c08db5",
+            "containerId": "ca230dae-0427-4a2e-93fb-c3a9678f24b2",
+            "name": "Soft delete task",
+            "url": "{{host}}/task/651b9e8067636c838b4be3c6",
+            "method": "DELETE",
+            "sortNum": 100000,
+            "created": "2023-10-03T05:21:24.822Z",
+            "modified": "2023-10-03T14:08:06.384Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "aa59dd16-2dd1-4085-a5d7-dae423ad954c",
+            "colId": "0b143d30-0f69-41c1-8a78-7c9428c08db5",
+            "containerId": "ca230dae-0427-4a2e-93fb-c3a9678f24b2",
+            "name": "Assign task",
+            "url": "{{host}}/task/651b9ede9f3b44ef21910f97",
+            "method": "POST",
+            "sortNum": 110000,
+            "created": "2023-10-03T05:29:10.437Z",
+            "modified": "2023-10-03T14:09:42.560Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"assignee\": \"651b914d874f4233e28e83b0\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "eecd1e4c-6280-4df5-a32a-bc6d8c5128ca",
+            "colId": "0b143d30-0f69-41c1-8a78-7c9428c08db5",
+            "containerId": "ca230dae-0427-4a2e-93fb-c3a9678f24b2",
+            "name": "Update task",
+            "url": "{{host}}/task/651b9e6867636c838b4be3be",
+            "method": "PUT",
+            "sortNum": 120000,
+            "created": "2023-10-03T13:39:21.943Z",
+            "modified": "2023-10-03T14:12:23.724Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Task 3 updated\",\n  \"description\": \"Description 3 update\",\n  \"status\": \"working\"\n}",
+                "form": []
+            },
+            "tests": []
+        }
+    ]
+}

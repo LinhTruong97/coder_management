@@ -12,4 +12,8 @@ router.get("/", function (req, res, next) {
 const userAPI = require("./user.api");
 router.use("/user", userAPI);
 
+// TASKS
+const taskAPI = require("./task.api");
+router.use("/task", taskAPI);
+
 module.exports = router;
